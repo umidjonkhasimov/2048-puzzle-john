@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8EF"
+    tools:context="uz.gita.my2048puzzleumidjon.MainActivity">
+
+    <ImageView
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_icon"
+        app:layout_constraintBottom_toTopOf="@+id/btnStartGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnStartGame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/btn_start_back"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="8dp"
+        android:text="Start Game"
+        android:textAllCaps="false"
+        android:textColor="#FAF8EF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnQuitGame"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnQuitGame"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="180dp"
+        android:background="@drawable/btn_quit_back"
+        android:paddingHorizontal="28dp"
+        android:paddingVertical="8dp"
+        android:text="Quit"
+        android:textAllCaps="false"
+        android:textColor="#FAF8EF"
+        android:textSize="28sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/btnStartGame"
+        app:layout_constraintStart_toStartOf="@+id/btnStartGame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
